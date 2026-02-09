@@ -6,7 +6,7 @@ from pathlib import Path
 def cleanup():
     # Issue: Unsafe default path
     log_dir = os.getenv("LOG_DIR", "/var/log")
-    #added new comments
+    #added new comments here
     # Issue: Recursive delete without safeguards
     target = Path(log_dir) / "app"
     print(f"Deleting logs in: {target}")
